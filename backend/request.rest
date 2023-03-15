@@ -1,0 +1,27 @@
+GET http://localhost:5000/users/
+
+###
+GET http://localhost:5000/users/64116d933a164ee67aa9add7
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Andi2",
+    "email": "andi@mail.com",
+    "gender": "Male"
+}
+
+###
+PATCH  http://localhost:5000/users/64116d933a164ee67aa9add7
+Content-Type: application/json
+
+{
+    "name": "ilham",
+    "email": "ilham@mail.com",
+    "gender": "Male"
+}
+
+###
+DELETE  http://localhost:5000/users/64116fc35cdeabf0174916f6
